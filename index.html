@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Treasure Hunt Clue Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-section">
+      <h1>🔍 Enter Your Group, Clue Number & Passkey</h1>
+      <input type="number" id="groupNum" placeholder="Group number (e.g., 1)" />
+      <input type="number" id="clueNum" placeholder="Clue number (e.g., 3)" />
+      <input type="text" id="passkey" placeholder="Enter passkey" />
+      <button onclick="getClue()">Reveal Clue</button>
+    </div>
+    <div id="clue"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
