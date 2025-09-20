@@ -10,14 +10,17 @@ body {
 }
 
 .container {
+  font-size:22px;
   text-align: center;
   background: rgb(66, 184, 192);
   padding: 30px 30px 40px 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-  width: 600px;
-  max-width: 90%;
+  width: 700px;
+  max-width: 98%;
+  padding: 40px 40px 50px 40px;
 }
+
 
 input {
   padding: 10px;
@@ -44,7 +47,7 @@ button {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  font-size: 18px;
+  font-size: 28px;
   color: #333;
   width: 100%;
   box-sizing: border-box;
@@ -56,8 +59,8 @@ button {
 #clue.revealed {
   opacity: 1;
   transform: translateY(0);
-
 }
+
 @media (max-width: 480px) {
   body {
     padding: 10px;
@@ -92,3 +95,4 @@ button {
     border-radius: 8px;
   }
 }
+
