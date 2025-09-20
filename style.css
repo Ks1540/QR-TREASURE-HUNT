@@ -10,13 +10,18 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background: rgb(66, 184, 192);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-  width: 600px;
-  max-width: 90%;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
 }
 
 .input-section {
@@ -52,19 +57,21 @@ button {
 }
 
 #clue {
-  margin-top: 30px;
-  padding: 40px 30px;
+  margin: 30px auto;
+  padding: 50px 30px;
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.15);
-  font-size: 20px;
-  color: #333;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  font-size: 24px;
+  color: #222;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease;
+  text-align: center;
+  position: relative;
 }
 
 #clue.revealed {
@@ -82,26 +89,21 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    padding: 20px;
-  }
-
-  .input-section h1 {
-    font-size: 22px;
-  }
-
-  input, button {
-    width: 100%;
-    font-size: 20px;
-  }
-
   #clue {
-    font-size: 22px;
-    padding: 30px 20px;
+    font-size: 26px;
+    padding: 40px 20px;
   }
 
   #clue h2 {
-    font-size: 30px;
+    font-size: 32px;
+  }
+
+  #clue p {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 20px;
   }
 }
 .loader {
@@ -134,4 +136,3 @@ button {
   50% { transform: scale(1.1); opacity: 1; }
   100% { transform: scale(1); opacity: 0.8; }
 }
-
