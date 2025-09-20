@@ -24,43 +24,43 @@ body {
 }
 
 .input-section h1 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 20px;
 }
 
 input {
-  padding: 12px;
-  margin: 10px 0;
+  padding: 14px;
+  margin: 12px 0;
   width: 100%;
-  max-width: 300px;
-  font-size: 18px;
+  max-width: 320px;
+  font-size: 20px;
   border-radius: 6px;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
 button {
-  padding: 12px 24px;
-  font-size: 18px;
+  padding: 14px 24px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 6px;
   border: none;
   background-color: #1e3c72;
   color: #fff;
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 #clue {
   margin-top: 30px;
-  padding: 40px 30px;
+  padding: 50px 30px;
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.15);
-  font-size: 20px;
-  color: #333;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  font-size: 24px;
+  color: #222;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(20px);
@@ -69,16 +69,20 @@ button {
 
 #clue.revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: scale(1.05) translateY(0);
 }
 
 #clue h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1e3c72;
 }
 
 #clue p {
   text-align: center;
+  font-size: 26px;
+  line-height: 1.6;
+  margin: 15px 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -92,15 +96,19 @@ button {
 
   input, button {
     width: 100%;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   #clue {
-    font-size: 22px;
-    padding: 30px 20px;
+    font-size: 26px;
+    padding: 40px 20px;
   }
 
   #clue h2 {
-    font-size: 30px;
+    font-size: 32px;
+  }
+
+  #clue p {
+    font-size: 24px;
   }
 }
